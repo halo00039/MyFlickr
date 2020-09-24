@@ -26,12 +26,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-is-Q9C">
-                                <rect key="frame" x="183" y="476" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-is-Q9C">
+                                <rect key="frame" x="0.0" y="476" width="414" height="30"/>
                                 <state key="normal" title="Search"/>
                                 <connections>
-                                    <action selector="searchHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8p-mk-Ac9"/>
                                     <segue destination="VTT-DR-HmM" kind="show" id="xhg-OZ-hwG"/>
                                 </connections>
                             </button>
@@ -40,9 +38,12 @@
                         <constraints>
                             <constraint firstItem="cZX-n6-abG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="2JQ-qK-wle"/>
                             <constraint firstItem="cZX-n6-abG" firstAttribute="top" secondItem="DwD-Od-C6h" secondAttribute="bottom" constant="30" id="ACk-kd-pwV"/>
+                            <constraint firstItem="SF7-is-Q9C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ISu-rB-ZqM"/>
                             <constraint firstItem="DwD-Od-C6h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="KS2-UY-Fwh"/>
                             <constraint firstItem="DwD-Od-C6h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="Mwb-Ib-07B"/>
+                            <constraint firstItem="SF7-is-Q9C" firstAttribute="top" secondItem="cZX-n6-abG" secondAttribute="bottom" constant="40" id="PZx-6C-fyA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DwD-Od-C6h" secondAttribute="trailing" constant="100" id="Tf9-aM-rwu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SF7-is-Q9C" secondAttribute="trailing" id="bXB-Zf-CIi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cZX-n6-abG" secondAttribute="trailing" constant="100" id="hoH-3M-MVC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

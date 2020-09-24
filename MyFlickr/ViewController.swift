@@ -37,12 +37,22 @@ extension ViewController: UITextFieldDelegate {
         
         searchBtn.isEnabled = false
         navigationItem.title = "Flickr"
+        
+        addTapGesture()
     }
     
-    @IBAction func searchHandler(_ sender: UIButton) {
+    func addTapGesture() {
         
+            let tap = UITapGestureRecognizer(target: self, action: #selector(returnKeyboard))
         
-    }
+            view.addGestureRecognizer(tap)
+        }
+    
+    @objc private func returnKeyboard() {
+        
+            self.view.endEditing(true)
+        
+        }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
